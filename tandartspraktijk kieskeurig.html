@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<title> tandarts afspraak </title>
+
+<body>
+    <h1>tandartsafspraak</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non nunc et lorem pharetra blandit ut et
+        velit. Maecenas lobortis aliquet ornare. Etiam hendrerit lectus vel eros fermentum consectetur. Proin at sapien
+        eget diam placerat elementum non sed ante. Sed eu ante vel justo faucibus finibus ornare non tellus. In.</p><br>
+
+
+    <img src="https://knmt.nl/sites/default/files/platform/styles/article_hero_1170x600_/public/2022-05/tandarts-docenten-gezocht.jpg"
+        alt="tandarts" width="300">
+    <img src="https://www.laugemantandartspraktijk.nl/wp-content/uploads/2015/07/SAM_0531.jpg" alt="tandarts"
+        width="300">
+    <img src="https://www.dentaldesigncenter.nl/wp-content/uploads/dental-design-weer-geopend-reguliere-tandzorg.jpg"
+        alt="tandarts" width="300">
+    <hr>
+    <form action="https://formspree.io/f/xyyvbrvw" method="post">
+        <fieldset>
+            <legend>Persoonlijke gegevens </legend>
+            <label for="Naam"> Naam</label>
+            <input id="Naam" type="text" required placeholder="Type uw naam aub" maxlength="10" name="Naam"><br><br>
+            <div class="geslacht">
+                <p>uw geslacht</p>
+                <input type="radio" name="geslacht" value="Man"> Man
+                <input type="radio" name="geslacht" value="Vrouw"> Vrouw
+                <input type="radio" name="geslacht" value="Man"> Anders
+
+            </div>
+            <br>
+
+            <label for="Gebortedatum"> geboortedatum</label>
+            <input type="date" id="Gebortedatum" required max="2022-12-01" name="geboorte datum">
+            <br>
+            <label for="Adres"> Uw adres</label>
+            <input id="Adres" type="text" required minlength="5" maxlength="20" placeholder="Uw adres aub"><br>
+
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Klachten beschrijving</legend>
+            <table>
+                <tr>
+                    <td><label for="klachtenperiode">Hoe veel dagen heeft u de klachten ?</label>
+                        <input id="klachtenperiode" type="number" max="30" required>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Foto's">eventuele afbeldingen</label>
+                        <input type="file" name="Foto's" id="Foto's" accept=".jpg, .png" multiple>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Heeft u 1 of meer van deze klachten?
+                        <input type="checkbox" name="ontsteking" value="extra klachten"> Ontsteking
+                        <input type="checkbox" name="breuk" value="extra klachten"> gebroken
+                        tanden
+                        <input type="checkbox" name="pijn" value="extra klachten"> pijn
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Toelichting van de klachten</legend>
+
+            <label for="Datumklachten"> Wanner zijn de klachten begonnen?</label>
+            <input type="date" id="Datumklachten" required min="2021-12-31" name="klacten begonnen"
+                max="2022-12-31"><br>
+
+            <label for="schriftelijktoelichting"> Extra toelichting</label><br>
+
+            <textarea name="schriftelijk toelichting" id="schriftelijktoelichting" cols="30" rows="10"
+                maxlength="200"></textarea>
+
+
+        </fieldset><br>
+
+        <input type="submit" name="submit" value="verzenden">
+        <input type="reset" name="reset" value="opnieuw">
+
+
+
+    </form>
+
+
+
+
+
+</body>
+
+</html>
